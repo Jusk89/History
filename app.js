@@ -62,3 +62,40 @@ document.querySelector('[data-font-plus]')?.addEventListener('click', () => {
   fontSize = Math.min(24, fontSize + 1);
   applyFont();
 });
+// ===== Developer panel: gallery from /images =====
+const devGallery = document.getElementById('devGallery');
+
+// Сюда вписывай свои картинки (положи их в папку images/)
+const DEV_IMAGES = [
+  { src: "./images/hero.jpg", title: "Hero / обложка" },
+  { src: "./images/kasym.jpg", title: "Касым хан" },
+  { src: "./images/orda.jpg", title: "Золотая Орда" },
+];
+
+if (devGallery) {
+  devGallery.innerHTML = DEV_IMAGES.map(i => `
+    <div class="g-item">
+      <img src="${i.src}" alt="${i.title}">
+      <div class="cap">${i.title}<br><code>${i.src}</code></div>
+    </div>
+  `).join("");
+}
+
+// ===== Developer panel: local upload preview =====
+const upload = document.getElementById('imgUpload');
+const preview = document.getElementById('imgPreview');
+
+if (upload && preview) {
+  upload.addEventListener('change', (e) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    const url = URL.createObjectURL(file);
+    preview.innerHTML = `
+      <div style="color:var(--muted); font-size:13px; margin-bottom:8px;">
+        Предпросмотр: <strong>${file.name}</strong>
+      </div>
+      <img src="${url}" alt="preview">
+    `;
+  });
+}
