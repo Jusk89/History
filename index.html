@@ -127,7 +127,44 @@
       <span class="chip">Тюркские каганаты</span>
     </div>
   </section>
+<section class="section">
+  <div class="section-title">
+    <h2>Для разработчика</h2>
+    <p>Быстро добавляй изображения и проверяй, как они выглядят</p>
+  </div>
 
+  <div class="dev-panel card" style="padding:16px;">
+    <div class="dev-grid">
+      <div class="panel">
+        <h4>Галерея изображений</h4>
+        <p style="margin:0 0 10px; color:var(--muted); font-size:13px;">
+          Добавь картинки в папку <code>images/</code> и впиши их названия в массив в <code>app.js</code>.
+        </p>
+
+        <div id="devGallery" class="gallery"></div>
+      </div>
+
+      <div class="panel">
+        <h4>Загрузить фото (только для просмотра)</h4>
+        <p style="margin:0 0 10px; color:var(--muted); font-size:13px;">
+          Это не отправит файл в интернет — просто покажет на странице. Чтобы “на сайт навсегда”, кладём в папку <code>images/</code>.
+        </p>
+
+        <input id="imgUpload" type="file" accept="image/*" />
+        <div id="imgPreview" style="margin-top:12px;"></div>
+
+        <div style="margin-top:14px;">
+          <h4>Как вставлять фото в карточки?</h4>
+          <ol style="margin:8px 0 0 18px; color:var(--muted); font-size:13px; line-height:1.6;">
+            <li>Создай папку <code>images</code> рядом с <code>index.html</code></li>
+            <li>Положи туда файл, например: <code>kasym.jpg</code></li>
+            <li>В HTML вставь: <code>&lt;img src="./images/kasym.jpg"&gt;</code></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
   <footer class="footer">
     QazaqStories • минималистичный журнал для чтения лонгридов по истории Казахстана.
   </footer>
