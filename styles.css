@@ -496,3 +496,6 @@ button{ font-family:inherit; }
 .cover-abilkhair{
   background: url("./images/abilkhair.jpeg") center/cover no-repeat;
 }
+.cover-china{
+  background: url("./images/china.jpg") center/cover no-repeat;
+}
