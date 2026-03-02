@@ -442,3 +442,51 @@ button{ font-family:inherit; }
 .cover-oath{
   background: url("./images/Zhongar.jpeg") center/cover no-repeat;
 }
+/* ===== Developers section ===== */
+
+.dev-team{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:18px;
+}
+
+.dev-card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:20px;
+  text-align:center;
+  transition:.25s;
+}
+
+.dev-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.dev-card img{
+  width:120px;
+  height:120px;
+  object-fit:cover;
+  border-radius:50%;
+  margin-bottom:12px;
+  border:3px solid var(--border);
+}
+
+.dev-card h3{
+  margin:6px 0;
+  font-size:18px;
+}
+
+.dev-card p{
+  font-size:14px;
+  color:var(--muted);
+  line-height:1.5;
+}
+
+/* mobile */
+@media (max-width:900px){
+  .dev-team{
+    grid-template-columns:1fr;
+  }
+}
