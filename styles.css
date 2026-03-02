@@ -490,3 +490,6 @@ button{ font-family:inherit; }
     grid-template-columns:1fr;
   }
 }
+.cover-neplyuev{
+  background: url("./images/neplyuev.jpeg") center/cover no-repeat;
+}
