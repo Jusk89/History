@@ -433,3 +433,6 @@ button{ font-family:inherit; }
   .dev-grid{ grid-template-columns: 1fr; }
   .gallery{ grid-template-columns: repeat(2, 1fr); }
 }
+.cover-tevkelev{
+  background: url("./images/tevkelev.jpeg") center/cover no-repeat;
+}
