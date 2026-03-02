@@ -439,3 +439,6 @@ button{ font-family:inherit; }
 .cover-koybagar{
   background: url("./images/Kogabagar.jpeg") center/cover no-repeat;
 }
+.cover-oath{
+  background: url("./images/Zhongar.jpeg") center/cover no-repeat;
+}
