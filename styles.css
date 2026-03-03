@@ -508,3 +508,6 @@ button{ font-family:inherit; }
 .cover-orendburg{
   background: url("./images/oryn.jpg") center/cover no-repeat;
 }
+.cover-kai{
+  background: url("./images/kai.jpg") center/cover no-repeat;
+}
