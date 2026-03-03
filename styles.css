@@ -502,3 +502,6 @@ button{ font-family:inherit; }
 .cover-state{
   background: url("./images/Abyl.jpg") center/cover no-repeat;
 }
+.cover-kirillov{
+  background: url("./images/kiril.jpg") center/cover no-repeat;
+}
