@@ -505,3 +505,6 @@ button{ font-family:inherit; }
 .cover-kirillov{
   background: url("./images/kiril.jpg") center/cover no-repeat;
 }
+.cover-orendburg{
+  background: url("./images/oryn.jpg") center/cover no-repeat;
+}
