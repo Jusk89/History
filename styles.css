@@ -511,3 +511,6 @@ button{ font-family:inherit; }
 .cover-kai{
   background: url("./images/kai.jpg") center/cover no-repeat;
 }
+.cover-nura{
+  background: url("./images/nura.jpg") center/cover no-repeat;
+}
